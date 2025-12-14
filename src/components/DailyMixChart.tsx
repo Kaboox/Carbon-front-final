@@ -51,7 +51,7 @@ export const DailyMixChart: React.FC<Props> = ({ data, label }) => {
                             dataKey="value"
                         >
                             
-                            {chartData.map((entry, index) => (
+                            {chartData.map((_, index) => (
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                             ))}
                         </Pie>
